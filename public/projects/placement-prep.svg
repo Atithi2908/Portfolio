@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#140f0c" />
+      <stop offset="50%" stop-color="#211812" />
+      <stop offset="100%" stop-color="#0c0907" />
+    </linearGradient>
+    <linearGradient id="goldGrad2" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#D4A373" />
+      <stop offset="100%" stop-color="#FAEDCD" />
+    </linearGradient>
+    <pattern id="grid2" width="30" height="30" patternUnits="userSpaceOnUse">
+      <path d="M 30 0 L 0 0 0 30" fill="none" stroke="#382d24" stroke-width="0.8" stroke-opacity="0.4" />
+    </pattern>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="450" fill="url(#bgGrad2)" />
+  <rect width="800" height="450" fill="url(#grid2)" />
+
+  <!-- Diagram Nodes: Candidate -> Job -> Employer -->
+  <!-- Employer Node -->
+  <rect x="120" y="160" width="160" height="100" rx="12" fill="#1c1611" stroke="#3d332a" stroke-width="2" />
+  <text x="150" y="215" font-family="sans-serif" font-size="16" font-weight="bold" fill="#D4A373">EMPLOYER</text>
+
+  <!-- Flow Line 1 -->
+  <path d="M 280 210 L 360 210" stroke="#D4A373" stroke-width="3" stroke-dasharray="4,4" />
+  <polygon points="360,210 350,204 350,216" fill="#D4A373" />
+
+  <!-- Job Listing Node -->
+  <rect x="360" y="160" width="160" height="100" rx="12" fill="#1c1611" stroke="#3d332a" stroke-width="2" />
+  <text x="410" y="215" font-family="sans-serif" font-size="16" font-weight="bold" fill="#FAEDCD">JOB</text>
+
+  <!-- Flow Line 2 -->
+  <path d="M 520 210 L 600 210" stroke="#D4A373" stroke-width="3" stroke-dasharray="4,4" />
+  <polygon points="600,210 590,204 590,216" fill="#D4A373" />
+
+  <!-- Candidate Node -->
+  <rect x="600" y="160" width="160" height="100" rx="12" fill="#1c1611" stroke="#3d332a" stroke-width="2" />
+  <text x="635" y="215" font-family="sans-serif" font-size="16" font-weight="bold" fill="#D4A373">CANDIDATE</text>
+
+  <!-- Socket Messaging Wave -->
+  <path d="M 120 310 Q 360 270 760 310" fill="none" stroke="#D4A373" stroke-width="1.5" opacity="0.4" stroke-dasharray="3,3" />
+
+  <!-- Text Overlay Badge -->
+  <rect x="50" y="370" width="370" height="42" rx="8" fill="#120e0b" stroke="#3d332a" stroke-width="1.5" />
+  <text x="70" y="396" font-family="monospace" font-size="14" font-weight="bold" fill="url(#goldGrad2)">
+    Full-Stack Placement &amp; Quiz Engine
+  </text>
+</svg>

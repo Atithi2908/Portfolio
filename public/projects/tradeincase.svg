@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="450" viewBox="0 0 800 450" fill="none">
+  <rect width="800" height="450" fill="#0b131f"/>
+  <!-- Radial Glow -->
+  <circle cx="400" cy="225" r="280" fill="url(#trade_glow)" opacity="0.3"/>
+  <!-- Candlestick Chart Simulation -->
+  <line x1="150" y1="120" x2="150" y2="320" stroke="#10b981" stroke-width="2"/>
+  <rect x="140" y="160" width="20" height="110" fill="#10b981" rx="3"/>
+  
+  <line x1="250" y1="140" x2="250" y2="340" stroke="#ef4444" stroke-width="2"/>
+  <rect x="240" y="190" width="20" height="90" fill="#ef4444" rx="3"/>
+
+  <line x1="350" y1="100" x2="350" y2="280" stroke="#10b981" stroke-width="2"/>
+  <rect x="340" y="130" width="20" height="110" fill="#10b981" rx="3"/>
+
+  <line x1="450" y1="150" x2="450" y2="350" stroke="#10b981" stroke-width="2"/>
+  <rect x="440" y="180" width="20" height="120" fill="#10b981" rx="3"/>
+
+  <line x1="550" y1="130" x2="550" y2="310" stroke="#ef4444" stroke-width="2"/>
+  <rect x="540" y="160" width="20" height="95" fill="#ef4444" rx="3"/>
+
+  <line x1="650" y1="90" x2="650" y2="290" stroke="#10b981" stroke-width="2"/>
+  <rect x="640" y="110" width="20" height="130" fill="#10b981" rx="3"/>
+
+  <!-- Badge Label -->
+  <rect x="250" y="360" width="300" height="36" rx="18" fill="#131d2b" stroke="#1e293b"/>
+  <text x="400" y="383" fill="#10b981" font-family="monospace" font-size="13" font-weight="bold" text-anchor="middle" letter-spacing="1.5">REDIS IN-MEMORY MATCHING</text>
+  <defs>
+    <radialGradient id="trade_glow" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(400 225) rotate(90) scale(280)">
+      <stop stop-color="#10b981"/>
+      <stop offset="1" stop-color="#10b981" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+</svg>

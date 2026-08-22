@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="450" viewBox="0 0 800 450" fill="none">
+  <rect width="800" height="450" fill="#120e0a"/>
+  <!-- Radial Glow -->
+  <circle cx="400" cy="225" r="280" fill="url(#nexa_glow)" opacity="0.35"/>
+  <!-- Grid Lines -->
+  <path d="M0 75H800M0 150H800M0 225H800M0 300H800M0 375H800" stroke="#2e251e" stroke-dasharray="4 4"/>
+  <path d="M133 0V450M266 0V450M400 0V450M533 0V450M666 0V450" stroke="#2e251e" stroke-dasharray="4 4"/>
+  <!-- Center AI Node Icon -->
+  <rect x="340" y="165" width="120" height="120" rx="24" fill="#1c1611" stroke="#D4A373" stroke-width="2"/>
+  <circle cx="400" cy="225" r="28" fill="#D4A373" opacity="0.2"/>
+  <circle cx="400" cy="225" r="14" fill="#D4A373"/>
+  <path d="M300 225H340M460 225H500M400 125V165M400 285V325" stroke="#D4A373" stroke-width="2" stroke-linecap="round"/>
+  <circle cx="300" cy="225" r="6" fill="#D4A373"/>
+  <circle cx="500" cy="225" r="6" fill="#D4A373"/>
+  <circle cx="400" cy="125" r="6" fill="#D4A373"/>
+  <circle cx="400" cy="325" r="6" fill="#D4A373"/>
+  <!-- Badge Label -->
+  <rect x="270" y="360" width="260" height="36" rx="18" fill="#1a140f" stroke="#3d332a"/>
+  <text x="400" y="383" fill="#D4A373" font-family="monospace" font-size="13" font-weight="bold" text-anchor="middle" letter-spacing="1.5">NEXA — AGENT SYSTEM</text>
+  <defs>
+    <radialGradient id="nexa_glow" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(400 225) rotate(90) scale(280)">
+      <stop stop-color="#D4A373"/>
+      <stop offset="1" stop-color="#D4A373" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+</svg>
