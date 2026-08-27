@@ -53,7 +53,7 @@ export const projectsData: ProjectCaseStudy[] = [
       "PyAutoGUI",
       "PyWinAuto",
     ],
-    githubUrl: "https://github.com/Atithi2908",
+    githubUrl: "https://github.com/Atithi2908/Agent_NEXA",
     problem: {
       context:
         "Traditional LLM assistants operate solely in text sandboxes, lacking the capability to interact with dynamic web applications and native desktop OS environments.",
@@ -158,7 +158,7 @@ export const projectsData: ProjectCaseStudy[] = [
       "Prisma",
       "AWS",
     ],
-    githubUrl: "https://github.com/Atithi2908",
+    githubUrl: "https://github.com/Atithi2908/Backend_monitoring_system",
     problem: {
       context:
         "High-volume microservices require constant monitoring of latency percentiles (p50, p95, p99), error rates, and resource utilization.",
@@ -257,7 +257,7 @@ export const projectsData: ProjectCaseStudy[] = [
       "Replication & Quorum",
       "Failure Recovery",
     ],
-    githubUrl: "https://github.com/Atithi2908",
+    githubUrl: "https://github.com/Atithi2908/Distribute_Cache",
     problem: {
       context:
         "High-throughput microservices require distributed caching to relieve database pressure without single points of failure.",
@@ -355,7 +355,7 @@ export const projectsData: ProjectCaseStudy[] = [
       "Docker",
       "Azure",
     ],
-    githubUrl: "https://github.com/Atithi2908",
+    githubUrl: "https://github.com/Atithi2908/Paper_trading",
     problem: {
       context:
         "Simulated trading systems need to provide users with authentic market dynamics, instant feedback on order placement, and live price movements without latency lag.",
@@ -558,7 +558,7 @@ export const projectsData: ProjectCaseStudy[] = [
       "Socket.IO",
       "JWT",
     ],
-    githubUrl: "https://github.com/Atithi2908",
+    githubUrl: "https://github.com/Atithi2908/Placement_Prep",
     problem: {
       context:
         "Students preparing for technical placement drives need a unified workspace combining interview practice, daily quizzes, task tracking, group study rooms, and direct job application management.",
