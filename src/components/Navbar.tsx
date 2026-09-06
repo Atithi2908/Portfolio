@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState, useEffect } from "react";
+import Image from "next/image";
 import { profileData } from "@/data/profile";
 import { Terminal, Mail, Menu, X, ArrowUpRight, FileText } from "lucide-react";
 import { GithubIcon, LinkedinIcon } from "./Icons";
@@ -42,8 +43,14 @@ export const Navbar = () => {
           href="#"
           className="flex items-center gap-3 group cursor-pointer"
         >
-          <div className="w-9 h-9 rounded-xl bg-[#1c1714] border border-[#3d332a] flex items-center justify-center text-[#D4A373] group-hover:border-[#D4A373]/60 group-hover:bg-[#D4A373]/10 transition-all">
-            <Terminal className="w-4 h-4 text-[#D4A373]" />
+          <div className="w-9 h-9 rounded-xl bg-[#1c1714] border border-[#3d332a] flex items-center justify-center overflow-hidden relative group-hover:border-[#D4A373]/60 transition-all">
+            <Image
+              src="/avatar.png"
+              alt={profileData.name}
+              width={36}
+              height={36}
+              className="w-full h-full object-cover"
+            />
           </div>
           <div>
             <div className="font-mono font-bold text-sm tracking-tight text-white flex items-center gap-2">

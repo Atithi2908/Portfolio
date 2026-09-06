@@ -18,6 +18,14 @@ const jetbrainsMono = JetBrains_Mono({
 export const metadata: Metadata = {
   title: `${profileData.name} | ${profileData.role}`,
   description: `${profileData.positioning} - Portfolio of ${profileData.name}, specializing in autonomous AI agents, distributed telemetry pipelines, and real-time systems.`,
+  icons: {
+    icon: [
+      { url: "/icon.svg", type: "image/svg+xml" },
+      { url: "/avatar.png", type: "image/png" },
+    ],
+    shortcut: "/icon.svg",
+    apple: "/icon.svg",
+  },
   keywords: [
     "Atithi Jaiman",
     "AI Engineer",
