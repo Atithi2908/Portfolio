@@ -19,13 +19,14 @@ export const Navbar = () => {
   }, []);
 
   const navLinks = [
-    { label: "Overview", href: "#" },
-    { label: "Education", href: "#education" },
-    { label: "Experience", href: "#experience" },
-    { label: "Projects", href: "#projects" },
-    { label: "Skills", href: "#skills" },
-    { label: "Competitive", href: "#achievements" },
-    { label: "Interests", href: "#interests" },
+    { label: "Overview", href: "/#" },
+    { label: "Education", href: "/#education" },
+    { label: "Experience", href: "/#experience" },
+    { label: "Projects", href: "/#projects" },
+    { label: "Blogs", href: "/blogs" },
+    { label: "Skills", href: "/#skills" },
+    { label: "Competitive", href: "/#achievements" },
+    { label: "Interests", href: "/#interests" },
   ];
 
   return (
@@ -40,22 +41,12 @@ export const Navbar = () => {
         
         {/* Brand identity */}
         <a
-          href="#"
+          href="/"
           className="flex items-center gap-3 group cursor-pointer"
         >
-          <div className="w-9 h-9 rounded-xl bg-[#1c1714] border border-[#3d332a] flex items-center justify-center overflow-hidden relative group-hover:border-[#D4A373]/60 transition-all">
-            <Image
-              src="/avatar.png"
-              alt={profileData.name}
-              width={36}
-              height={36}
-              className="w-full h-full object-cover"
-            />
-          </div>
           <div>
             <div className="font-mono font-bold text-sm tracking-tight text-white flex items-center gap-2">
               <span>{profileData.name}</span>
-              <span className="w-1.5 h-1.5 rounded-full bg-[#D4A373] animate-pulse"></span>
             </div>
             <p className="text-[11px] font-mono text-[#a89f91]">
               Backend &amp; AI Engineer

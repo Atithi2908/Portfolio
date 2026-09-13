@@ -82,28 +82,28 @@ export function ExpandableProjectsList({
       {/* ─── Expanded Modal View ─── */}
       <AnimatePresence>
         {active ? (
-          <div className="fixed inset-0 grid place-items-center z-[100] p-4 sm:p-6 overflow-y-auto">
-            {/* Close Button */}
-            <motion.button
-              key={`button-${active.title}-${id}`}
-              layout
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              exit={{ opacity: 0, transition: { duration: 0.05 } }}
-              className="flex absolute top-4 right-4 z-[110] items-center justify-center bg-[#1e1813] hover:bg-[#2c231c] text-[#e6ccb2] rounded-full h-9 w-9 border border-[#3d332a] transition-all"
-              onClick={() => setActive(null)}
-            >
-              <X className="h-5 w-5" />
-            </motion.button>
-
+          <div className="fixed inset-0 z-[100] overflow-y-auto p-4 sm:p-6 md:p-10 flex justify-center items-start sm:items-center [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
             {/* Modal Card Content */}
             <motion.div
               layoutId={`card-${active.title}-${id}`}
               ref={ref}
-              className="w-full max-w-3xl h-fit max-h-[90vh] flex flex-col bg-[#140f0c] border border-[#3d332a] rounded-2xl overflow-hidden shadow-2xl my-auto"
+              initial={{ opacity: 0, y: 15, scale: 0.98 }}
+              animate={{ opacity: 1, y: 0, scale: 1 }}
+              exit={{ opacity: 0, y: 15, scale: 0.98 }}
+              transition={{ duration: 0.25, ease: [0.16, 1, 0.3, 1] }}
+              className="relative w-full max-w-3xl bg-[#140f0c] border border-[#3d332a] rounded-3xl overflow-hidden shadow-2xl my-auto text-left transition-all"
             >
-              {/* Image Banner */}
-              <motion.div layoutId={`image-${active.title}-${id}`} className="relative">
+              {/* Floating Close Button */}
+              <button
+                className="flex absolute top-4 right-4 z-[110] items-center justify-center bg-[#1e1813]/90 hover:bg-[#2c231c] text-[#e6ccb2] rounded-full h-9 w-9 border border-[#3d332a] backdrop-blur-md transition-all shadow-lg hover:scale-105 active:scale-95"
+                onClick={() => setActive(null)}
+                aria-label="Close modal"
+              >
+                <X className="h-5 w-5" />
+              </button>
+
+              {/* Image Banner Header */}
+              <div className="relative w-full">
                 <img
                   src={active.src}
                   alt={active.title}
@@ -111,48 +111,38 @@ export function ExpandableProjectsList({
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#140f0c] via-[#140f0c]/30 to-transparent" />
                 <div className="absolute bottom-4 left-4 right-4 flex items-center justify-between">
-                  <span className="px-3 py-1 rounded-full text-xs font-mono bg-[#D4A373]/20 border border-[#D4A373]/40 text-[#D4A373] backdrop-blur-md font-semibold">
+                  <span className="px-3.5 py-1 rounded-full text-xs font-mono bg-[#D4A373]/20 border border-[#D4A373]/40 text-[#D4A373] backdrop-blur-md font-semibold shadow-sm">
                     {active.badge}
                   </span>
                   <span className="text-xs font-mono text-[#b8ad9e]">
                     {active.project.period}
                   </span>
                 </div>
-              </motion.div>
+              </div>
 
-              {/* Modal Body */}
-              <div className="p-6 sm:p-8 overflow-y-auto space-y-6 max-h-[60vh] [scrollbar-width:thin]">
+              {/* Full Modal Content Body (Natural continuous document flow) */}
+              <div className="p-6 sm:p-8 md:p-10 space-y-6">
                 {/* Header Title & CTA */}
                 <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-b border-[#2e251e] pb-6">
                   <div>
-                    <motion.h3
-                      layoutId={`title-${active.title}-${id}`}
-                      className="font-bold text-white text-xl sm:text-2xl tracking-tight"
-                    >
+                    <h3 className="font-bold text-white text-xl sm:text-2xl tracking-tight">
                       {active.title}
-                    </motion.h3>
-                    <motion.p
-                      layoutId={`description-${active.description}-${id}`}
-                      className="text-[#b8ad9e] text-sm mt-1"
-                    >
+                    </h3>
+                    <p className="text-[#b8ad9e] text-sm mt-1">
                       {active.description}
-                    </motion.p>
+                    </p>
                   </div>
 
-                  <motion.a
-                    layout
-                    initial={{ opacity: 0 }}
-                    animate={{ opacity: 1 }}
-                    exit={{ opacity: 0 }}
+                  <a
                     href={active.ctaLink}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center gap-2 px-5 py-2.5 text-xs font-mono font-bold rounded-xl bg-[#D4A373] text-[#120e0a] hover:bg-[#E6CCB2] transition-all shadow-lg shadow-[#D4A373]/15 whitespace-nowrap self-start sm:self-center"
+                    className="inline-flex items-center gap-2 px-5 py-2.5 text-xs font-mono font-bold rounded-xl bg-[#D4A373] text-[#120e0a] hover:bg-[#E6CCB2] transition-all shadow-lg shadow-[#D4A373]/15 whitespace-nowrap self-start sm:self-center shrink-0"
                   >
                     <GithubIcon className="w-4 h-4 text-[#120e0a]" />
                     <span>{active.ctaText}</span>
                     <ArrowUpRight className="w-3.5 h-3.5" />
-                  </motion.a>
+                  </a>
                 </div>
 
                 {/* Tech Stack Chips */}

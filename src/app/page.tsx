@@ -8,6 +8,7 @@ import { motion } from "framer-motion";
 import { Education } from "@/components/Education";
 import { ExperienceSection } from "@/components/ExperienceSection";
 import { ProjectsSection } from "@/components/ProjectsSection";
+import { BlogsSection } from "@/components/BlogsSection";
 import { SkillsSection } from "@/components/SkillsSection";
 import { AchievementsSection } from "@/components/AchievementsSection";
 import { WhatILikeSection } from "@/components/WhatILikeSection";
@@ -43,10 +44,6 @@ export default function Home() {
                 
                 {/* Status / Availability Badge */}
                 <div className="inline-flex items-center gap-2.5 rounded-full border border-[#3d332a] bg-[#1a1511]/90 px-4 py-1.5 text-xs font-mono text-[#d6cdbf] backdrop-blur-md shadow-sm pointer-events-auto">
-                  <span className="relative flex h-2 w-2">
-                    <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-[#D4A373] opacity-75"></span>
-                    <span className="relative inline-flex h-2 w-2 rounded-full bg-[#D4A373]"></span>
-                  </span>
                   <span>{profileData.status}</span>
                 </div>
 
@@ -158,6 +155,9 @@ export default function Home() {
 
         {/* ═══ 3. PROJECTS / CASE STUDIES ═══ */}
         <ProjectsSection />
+
+        {/* ═══ 3.5. TECHNICAL BLOGS / SYSTEM DESIGN ═══ */}
+        <BlogsSection />
 
         {/* ═══ 4. SKILLS SECTION ═══ */}
         <SkillsSection />
