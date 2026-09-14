@@ -50,5 +50,5 @@ export const profileData: Profile = {
     leetcode: "https://leetcode.com/u/Atithi_jaiman",
     email: "mailto:atithijaiman29@gmail.com",
   },
-  resumeUrl: "/Atithi_Jaiman_Resume.pdf",
+  resumeUrl: "/Atithi's_resume.pdf",
 };
