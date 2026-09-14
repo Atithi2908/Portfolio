@@ -26,17 +26,17 @@ export interface Profile {
 
 export const profileData: Profile = {
   name: "Atithi Jaiman",
-  role: "Backend & Systems AI Engineer",
-  positioning: "I build backend systems and explore what happens behind the scenes when they get complicated.",
-  tagline: "System Design • Distributed Systems • AI Agents",
+  role: "Backend & AI Engineer",
+  positioning: "I specialize in scalable backend systems, distributed infrastructure, and AI applications.",
+  tagline: "Distributed Backend Systems • High-Throughput Pipelines • AI Applications",
   bio: [
-    "I like building backend systems and figuring out what happens behind the scenes when they start getting complicated.",
-    "My main interests are system design and distributed systems, and lately I've been exploring AI agents. I use AI regularly while coding, but I'm the kind of developer who still wants to understand the code, question it, and test it before trusting it.",
+    "I specialize in backend engineering, distributed infrastructure, and high-throughput systems — building resilient event pipelines, databases, and microservices alongside AI integration.",
+    "Driven by first-principles engineering, robust system architecture, and algorithmic rigor (LeetCode Knight). Focused on building scalable backends that power intelligent software.",
   ],
-  location: "Bengaluru, Karnataka",
+  location: "Jaipur, Rajasthan / Dharwad, India",
   email: "atithijaiman29@gmail.com",
   phone: "+91 6378184095",
-  status: "Open for Backend & AI Related Opportunities",
+  status: "Available for Backend & AI Engineering Roles",
   education: {
     institution: "Indian Institute of Information Technology, Dharwad",
     degree: "B.Tech in Computer Science & Engineering",

@@ -19,31 +19,34 @@ export const experienceData: ExperienceItem[] = [
     company: "Trivion Technologies",
     role: "Full Stack AI Engineer Intern",
     period: "May 2026 – Jul 2026",
-    location: "Remote / Bengaluru",
+    location: "Remote",
     summary:
-      "Engineered automated media processing pipelines, speech-to-text transcription workflows, and background worker systems for structured LinkedIn content generation.",
+      "Engineered end-to-end automated media pipelines and agentic LLM workflows to convert multi-format audiovisual content into structured, high-engagement LinkedIn posts.",
     impactHighlights: [
       {
-        title: "LLM Post Generation Engine",
+        title: "Automated Audiovisual Pipeline & STT",
         description:
-          "Integrated an LLM API to transform speech transcripts into structured LinkedIn posts with automated content generation.",
+          "Built an automated media extraction pipeline using FFmpeg to strip and normalize audio from video reels, integrating Deepgram's Speech-to-Text API for high-fidelity timestamped transcriptions.",
+        metrics: "High-accuracy transcription with automated audio chunking",
       },
       {
-        title: "Audio Processing Pipeline",
+        title: "LLM Post-Generation Engine",
         description:
-          "Built an audio processing pipeline using FFmpeg for speech-to-text transcription and downstream LLM processing.",
+          "Integrated structured LLM prompting and post-processing APIs to distill lengthy transcripts into formatted, hook-driven LinkedIn posts tailored for social audience retention.",
+        metrics: "Substituted hours of manual writing with instant generation",
       },
       {
-        title: "Resilient Background Sync Worker",
+        title: "Resilient Background Automation Worker",
         description:
-          "Automated Cron/manual sync with a background worker, preventing duplicates and scheduling LinkedIn posts.",
+          "Developed a background automation worker supporting dual-mode execution (Cron-triggered scheduled batches and manual on-demand sync). Built deduplication logic to eliminate redundant Reel processing and reliably queue scheduled LinkedIn posts.",
+        metrics: "Zero duplicate processing & automated dispatch queue",
       },
     ],
     technologies: [
       "Python",
       "Node.js",
       "LLM APIs",
-      "Speech-to-Text",
+      "Deepgram STT",
       "FFmpeg",
       "Cron Workers",
       "REST APIs",
