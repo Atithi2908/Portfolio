@@ -6,50 +6,41 @@ export interface SkillCategory {
 
 export const skillsData: SkillCategory[] = [
   {
-    title: "Web & Backend Development",
+    title: "Programming Languages",
+    iconName: "Code",
+    tools: ["C++", "Python", "Go (Golang)", "JavaScript", "TypeScript", "SQL"],
+  },
+  {
+    title: "Frameworks & APIs",
     iconName: "Server",
     tools: [
       "Node.js",
       "Express.js",
-      "RabbitMQ",
-      "Redis",
-      "WebSocket",
-      "REST APIs",
-      "Prisma ORM",
-      "PostgreSQL",
-    ],
-  },
-  {
-    title: "Programming Languages",
-    iconName: "Code",
-    tools: ["Go (Golang)", "C++", "Python", "TypeScript", "JavaScript", "SQL"],
-  },
-  {
-    title: "DevOps, Cloud & Infrastructure",
-    iconName: "Cloud",
-    tools: [
-      "Docker",
-      "AWS",
-      "Azure",
-      "Jenkins CI/CD",
-      "MongoDB",
-      "Git & GitHub",
-      "Linux",
-      "Jest & Testing",
-    ],
-  },
-  {
-    title: "AI & Autonomous Systems",
-    iconName: "Bot",
-    tools: [
-      "LangGraph",
+      "React",
+      "FastAPI",
       "LangChain",
-      "RAG Systems",
-      "Qdrant Vector DB",
-      "Ollama",
-      "Playwright",
-      "PyWinAuto",
-      "PyAutoGUI",
+      "LangGraph",
+      "REST APIs",
     ],
+  },
+  {
+    title: "Databases & Storage",
+    iconName: "Database",
+    tools: ["PostgreSQL", "MongoDB", "Redis", "Qdrant Vector DB"],
+  },
+  {
+    title: "AI & Automation",
+    iconName: "Bot",
+    tools: ["Ollama", "RAG Systems", "LLM Agents", "Playwright"],
+  },
+  {
+    title: "DevOps & Cloud Infrastructure",
+    iconName: "Cloud",
+    tools: ["Docker", "Jenkins", "CI/CD", "RabbitMQ", "AWS", "Azure"],
+  },
+  {
+    title: "Engineering Tools & Protocols",
+    iconName: "Cpu",
+    tools: ["Git", "GitHub", "Postman", "Jest", "Prisma", "WebSocket"],
   },
 ];

@@ -74,11 +74,11 @@ export default function Home() {
                   <p className="text-xl sm:text-2xl font-bold tracking-tight text-white">
                     I build{" "}
                     <span className="text-[#D4A373] underline decoration-[#D4A373]/60 decoration-2 underline-offset-4">
-                      scalable backend systems, distributed infrastructure, and AI applications.
+                      backend systems, distributed infrastructure, and AI agents.
                     </span>
                   </p>
                   <p className="text-sm sm:text-base text-[#b8ad9e] font-normal leading-relaxed">
-                    From high-throughput event pipelines and distributed monitoring platforms to microservices, databases, and autonomous AI agents, I focus on turning complex backend engineering problems into reliable software.
+                    I like building backend systems and figuring out what happens behind the scenes when they start getting complicated. My main interests are system design and distributed systems, and lately I’ve been exploring AI agents. I use AI regularly while coding, but I’m the kind of developer who still wants to understand the code, question it, and test it before trusting it.
                   </p>
                 </div>
 
